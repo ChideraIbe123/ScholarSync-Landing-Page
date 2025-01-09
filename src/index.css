@@ -131,28 +131,32 @@
   }
 
   @keyframes slide-right {
-    from {
+    0% {
       transform: translateX(-100%);
+      opacity: 0;
     }
-    to {
-      transform: translateX(100%);
+    100% {
+      transform: translateX(0);
+      opacity: 1;
     }
   }
 
   @keyframes slide-left {
-    from {
+    0% {
       transform: translateX(100%);
+      opacity: 0;
     }
-    to {
-      transform: translateX(-100%);
+    100% {
+      transform: translateX(0);
+      opacity: 1;
     }
   }
 
   .animate-slide-right {
-    animation: slide-right 8s linear infinite;
+    animation: slide-right 1.5s ease-out forwards;
   }
 
   .animate-slide-left {
-    animation: slide-left 8s linear infinite;
+    animation: slide-left 1.5s ease-out forwards;
   }
 }

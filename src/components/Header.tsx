@@ -1,17 +1,29 @@
-import React from 'react';
-import { BookOpen, Play } from 'lucide-react';
+import React from "react";
+import { BookOpen, Play } from "lucide-react";
 
 export const Header = () => {
   return (
-    <header className="fixed w-full bg-lavender/80 backdrop-blur-md shadow-lg z-50">
-      <div className="container mx-auto py-3 px-4">
+    <header className="fixed w-full z-50">
+      {/* Gradient background with animation */}
+      <div className="absolute inset-0 bg-gradient-to-r from-lavender via-lavender/90 to-white"></div>
+
+      <div className="container mx-auto py-3 px-4 relative">
         <div className="flex items-center justify-between">
           {/* Logo Section */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 group">
             <div className="relative w-8 h-8">
-              <BookOpen className="h-8 w-8 text-gunmetal absolute" />
+              <BookOpen className="h-8 w-8 text-gunmetal absolute animate-bounce-slow" />
             </div>
-            <span className="text-2xl font-bold gradient-text tracking-tight">ScholarSync</span>
+            <div className="overflow-hidden">
+              <span className="text-2xl font-bold tracking-tight inline-block">
+                <span className="inline-block animate-slide-right">
+                  Scholar
+                </span>
+                <span className="gradient-text inline-block animate-slide-left">
+                  Sync
+                </span>
+              </span>
+            </div>
           </div>
 
           {/* Right Section */}

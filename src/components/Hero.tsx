@@ -1,5 +1,5 @@
-import React from 'react';
-import { ArrowRight, Play, CheckCircle } from 'lucide-react';
+import React from "react";
+import { ArrowRight, Play, CheckCircle } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -22,8 +22,9 @@ export const Hero = () => {
           Scholar<span className="gradient-text">Sync</span>
         </h1>
         <p className="text-2xl text-gunmetal/80 mb-6 tracking-wide font-light max-w-3xl mx-auto leading-relaxed">
-          Transform your research workflow with AI-powered insights and seamless collaboration. 
-          Experience intelligent paper analysis that saves you hours of manual work.
+          Transform your research workflow with AI-powered insights and seamless
+          collaboration. Experience intelligent paper analysis that saves you
+          hours of manual work.
         </p>
         <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto mb-8">
           <div className="flex items-center space-x-2 text-gunmetal/70">
